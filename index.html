@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AirBNB_Clone </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-mode='light'>
+    <div class="header">
+        <nav id="navBar">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Popular Places</a></li>
+                <li><a href="rentCart.html">Travel Outside</a></li>
+                <li><a href="rentMe.html">Online Pack</a></li>
+            </ul>
+            <div class="spaceBtn">
+                <a href="#" class="register-btn">Register now</a>
+                <button class="changeTheme"><i class='bx bxs-adjust-alt'></i> Theme Color</button>
+            </div>
+            <img src="/images/menu.png" onclick="togglebtn()" class="menu" alt="menu">
+        </nav>
+        <div class="container">
+            <h1>Find Your Next Stay</h1>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label> Location</label>
+                        <input type="text" placeholder="Where are you going">
+                    </div>
+                    <div>
+                        <label>Check in</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label>Check out</label>
+                        <input type="text" placeholder="Add Date">
+                    </div>
+                    <div>
+                        <label>Guest</label>
+                        <input type="text" placeholder="Add Guest">
+                    </div>
+                    <button type="submit"><img src="images/search.png" alt="button"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="sub-title">Exclusive</h2>
+        <div class="exclusives">
+            <div>
+                <img src="images/image-1.png" alt="exclusives">
+                <span>
+                    <h3>London</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-2.png" alt="exclusives">
+                <span>
+                    <h3>Switzerland</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-3.png" alt="exclusives">
+                <span>
+                    <h3>Australia</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-4.png" alt="exclusives">
+                <span>
+                    <h3>France</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-5.png" alt="exclusives">
+                <span>
+                    <h3>Amsterdam</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-6.png" alt="exclusives">
+                <span>
+                    <h3>Netherlands</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-7.png" alt="exclusives">
+                <span>
+                    <h3>New York</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-8.png" alt="exclusives">
+                <span>
+                    <h3>Chicago</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-9.png" alt="exclusives">
+                <span>
+                    <h3>San Francisco</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+            <div>
+                <img src="images/image-10.png" alt="exclusives">
+                <span>
+                    <h3>Shanghai</h3>
+                    <p>Starts @$250</p>
+                </span>
+            </div>
+        </div>
+        <h2 class="sub-title">Trending Places</h2>
+        <div class="trending">
+            <div>
+                <img src="images/dubai.png" alt="dubai">
+                <h3>Dubai</h3>
+            </div>
+            <div>
+                <img src="images/new-york.png" alt="NewYork">
+                <h3>New York</h3>
+            </div>
+            <div>
+                <img src="images/paris.png" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+            <div>
+                <img src="images/new-delhi.png" alt="Delhi">
+                <h3>New Delhi</h3>
+            </div>
+        </div>
+        <div class="cta">
+            <h3>Sharing <br> is Earning now</h3>
+            <p>Great oppurtunity to male money by <br> sharing your extra space</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+
+        <h2 class="sub-title">Travellers Stories</h2>
+        <div class="stories">
+            <div>
+                <img src="images/story-1.png" alt="boat">
+                <p>Popular European countries with a budget of just $10</p>
+            </div>
+            <div>
+                <img src="images/story-2.png" alt="mountain">
+                <p>Traveled more than 100 Countriesz in less than a year</p>
+            </div>
+            <div>
+                <img src="images/story-3.png" alt="rock">
+                <p>Best experience you get while traveling to Thailand</p>
+            </div>
+        </div>
+        <a href="#" class="start-btn">Start making money</a>
+        <div class="about-msg">
+            <h2>About SimBNB</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur praesentium eum, dolor laudantium
+                labore aperiam dicta quam ab adipisci, delectus laborum maxime incidunt fuga architecto. Atque
+                voluptatum modi qui voluptas?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto eaque nobis
+                iste liberol dignissimos, excepturi, aperiam nesciunt possimus fuga vero ipsum iure doloribus expedita?
+                Laudantium obcaecati alias quis aut vitae!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="https://facebook.com"><i class='bx bxl-facebook'></i></a>
+        <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+        <a href="https://instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://linkedin.com"><i class='bx bxl-linkedin'></i></a>
+        <hr>
+        <p>Copyright © 2023, Staybnb </p>
+    </div>
+    <script>
+        let navBar = document.getElementById("navBar")
+        const body = document.querySelector('body')
+        const changeTheme = document.querySelector('.changeTheme')
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+
+        const handleDarkMode = () =>{
+            if(body.getAttribute('data-mode') === 'light'){
+                body.setAttribute('data-mode', 'dark')
+            } else {
+                body.setAttribute('data-mode', 'light')
+            }
+        }
+ 
+        changeTheme.addEventListener('click', handleDarkMode)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AirBNB_Clone </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav id="navBar" class="navbar-white">
+        <a href="index.html">
+            <img src="images/logo-red.png" class="logo">
+        </a>
+        
+        <ul class="nav-links">
+            <li><a href="#" class="active">Popular Places</a></li>
+            <li><a href="rentCart.html">Travel Outside</a></li>
+            <li><a href="rentMe.html">Online Pack</a></li>
+        </ul>
+        <a href="#" class="register-btn">Register now</a>
+        <img src="/images/menu.png" onclick="togglebtn()" class="menu" alt="menu">
+    </nav>
+    <div class="house-details">
+        <div class="house-title">
+            <h1>Wenge House</h1>
+            <div class="row">
+                <div>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star-half'></i>
+                    <i class='bx bx-star'></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: San Francisco , Califronia, United States</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/house-1.png" alt="house - XLphoto"></div>
+            <div><img src="images/house-2.png" alt="house - photo"></div>
+            <div><img src="images/house-3.png" alt="house - photo"></div>
+            <div><img src="images/house-4.png" alt="house - photo"></div>
+            <div><img src="images/house-5.png" alt="house - photo"></div>
+        </div>
+        <div class="small-details">
+            <h2>Entire rental unit hosted by Brandon</h2>
+            <p>2 guest &nbsp; &nbsp; 2beds &nbsp; &nbsp; 1 bathroom</p>
+            <h4>$ 100/day </h4>
+        </div>
+        <hr class="line">
+        <form class="check-form">
+            <div>
+                <label>Check-in</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div>
+                <label>Check-out</label>
+                <input type="text" placeholder="Add Date">
+            </div>
+            <div class="guest-field">
+                <label>Guest</label>
+                <input type="text" placeholder="2 guest">
+            </div>
+            <button type="submit">Check Availability</button>
+        </form>
+        <ul class="details-list">
+            <li><i class='bx bxs-home'></i>Entire Home
+                <span>You will have the entire flat for you.</span>
+            </li>
+            <li><i class='bx bx-paint'></i>Enhanced clean
+                <span>This host has committed to staybnb's cleaning process.</span>
+            </li>
+            <li><i class='bx bx-map'></i>Great Location
+                <span>90% of recent guests gave the location a 5star rating.</span>
+            </li>
+            <li><i class='bx bxs-heart'></i>Great Check-in Experience
+                <span>100% of recent guests gave the check-in process a 5 star rating.</span>
+            </li>
+        </ul>
+        <hr class="line">
+        <p class="home-desc">You can use the entire ground floor: kitchen, living room, dining room, breakfast area and
+            patio and garden
+            outside.
+            Street parking is available with a parking card we provide for all hours.
+
+            We will be attending but we primarily use the upstairs level so it's quiet. We love meeting people and
+            interacting with
+            guests as they please. About two or three times a week we cook dinner, which is located near the guest room.
+        </p>
+        <hr class="line">
+        <div class="map">
+            <h3>Location on map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28518.10509234311!2d-122.41366520877293!3d37.79015117867898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806415f06bdf%3A0xf048a8b5bd7b0cf3!2sGoogle%20San%20Francisco!5e0!3m2!1spl!2spl!4v1683403520296!5m2!1spl!2spl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>Location: San Francisco , Califronia, United States</b>
+            <p>It's like a home away from home</p>
+        </div>
+        <hr class="line">
+        <div class="host">
+            <img src="images/host.png" alt="host">
+            <div>
+                <h2>Hosted by Brandon</h2>
+                <p><span>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <i class='bx bx-star'></i>
+                    </span>&nbsp; &nbsp; 245 reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp;Response time 60min
+                </p>
+            </div>
+        </div>
+        <a href="#" class="contact-host">Contact Host</a>
+    </div>
+    <div class="footer">
+        <a href="https://facebook.com"><i class='bx bxl-facebook'></i></a>
+        <a href="https://twitter.com"><i class='bx bxl-twitter'></i></a>
+        <a href="https://instagram.com"><i class='bx bxl-instagram-alt'></i></a>
+        <a href="https://linkedin.com"><i class='bx bxl-linkedin'></i></a>
+        <hr>
+        <p>Copyright © 2023, Staybnb </p>
+    </div>
+    <script>
+        let navBar = document.getElementById("navBar")
+
+        function togglebtn() {
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+
+</html>
